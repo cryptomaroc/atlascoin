@@ -1,0 +1,28 @@
+
+UBUNTU EASY BUILD
+-----------------
+
+
+# Dependencies
+
+You can install dependencies using the Aptitude package manager:
+
+sudo apt-get install build-essential libboost-dev-all libssl-dev libdb5.3++-dev libdb++-dev libevent-dev
+
+## Compiling the Atlascoind 
+
+cd src/
+make -f makefile.unix
+
+## Configuring the Atlascoind
+
+vim /home/{user}/.AtlasCoin/AtlasCoin.conf
+
+It is recommended you use the following random password:
+=========================
+rpcuser=altascoinrpc
+rpcpassword={Generate a strong random password}
+ (you do not need to remember this password)
+ If the file does not exist, create it with owner-readable-only file permissions.
+
+
